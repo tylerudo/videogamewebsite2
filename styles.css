@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+    }
+    nav ul li a{
+    font-size: 16px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+section{
+    background: url(HITMAN3.jpg) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel__track-container{
+    background: lightgreen;
+    height: 100%;
+    position: relative;
+}
+.carousel__track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.carousel__slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.carousel__button--left {
+    left: -40px;
+}
+.carousel__button--right {
+    right: -40px;
+}
+
+.carousel__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.carousel__button img {
+    width: 12px;
+}
+.carousel__nav {
+   /* background: pink;*/
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.carousel__indicator {
+    border: 0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    background: rgba(0,0,0,.3);
+    margin: 0 12px;
+}
+.carousel__indicator.current-slide {
+    background: rgba (0,0,0,.75);
+}
