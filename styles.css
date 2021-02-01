@@ -99,7 +99,7 @@ section{
 
 .carousel {
     position: relative;
-    height: 600px;
+    height: 500px;
     width: 80%;
     margin: 0 auto;
 }
@@ -112,6 +112,7 @@ section{
     background: lightgreen;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 .carousel__track {
     padding: 0;
@@ -147,7 +148,7 @@ section{
     width: 12px;
 }
 .carousel__nav {
-   /* background: pink;*/
+   /*background: pink;*/
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -160,10 +161,13 @@ section{
     height: 15px;
     background: rgba(0,0,0,.3);
     margin: 0 12px;
+    cursor: pointer;
 }
 .carousel__indicator.current-slide {
     background: rgba (0,0,0,.75);
 }
+
+.is-hidden { display:none; }
 * {
     padding: 0;
     margin: 0;
