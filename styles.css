@@ -244,7 +244,7 @@ section{
             grid-gap: 3rem;
         }
     }
-    }
+
     .grid{
         display: grid;
         width: 114em;
