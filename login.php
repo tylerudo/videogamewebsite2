@@ -14,17 +14,18 @@
         <label for="check" class="checkbtn">
             <i class="fas fa-bars"></i>
         </label>
-        <label class="logo">Games</label>
+        <label class="logo">Support</label>
         <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="games.html">Games</a></li>
-            <li><a href="consoles.html">Consoles</a></li>
-            <li><a href="Equipment.html">Equipment</a></li>
-            <li><a href="support.html">Support</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="games.php">Games</a></li>
+            <li><a href="consoles.php">Consoles</a></li>
+            <li><a href="Equipment.php">Equipment</a></li>
+            <li><a href="support.php">Support</a></li>
         </ul>
     </nav>
     <section>  
     </section>
+    
 
 
 
